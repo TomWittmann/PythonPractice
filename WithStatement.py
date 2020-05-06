@@ -25,7 +25,8 @@ class WithStatementTestClass:
     def __repr__(self):
         return "This is the WithStatementTestClass object"
 
-
+#This if statement says is this being run directly by python or is it being imported.
+#You use this because sometimes you only want to run code if it is the main file.
 if __name__ == "__main__":
     with WithStatementTestClass() as object:
         print("Processing objects: {}".format(object))
